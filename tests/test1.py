@@ -1,5 +1,5 @@
-from app.parsers.markdown_parser import MarkdownParser
+from app.loaders.directory_loader import DirectoryLoader
+from pathlib import Path
 
-parser = MarkdownParser()
-document = parser.parse("app/data/raw/sample.md")
-print(document)
+loader = DirectoryLoader()
+print(loader.load(Path("app/data/raw")))
