@@ -6,9 +6,9 @@ An AI Powered support assistant that answers questions using any Documentation t
 
 Not Implemented yet
 
-- [ ] Chat with AI
-- [ ] Document Loader
-- [ ] Markdown Parser
+- [x] Chat with AI
+- [x] Document Loader
+- [x] Markdown Parser
 - [ ] PDF Parser
 - [ ] Chunking
 - [ ] Embeddings
