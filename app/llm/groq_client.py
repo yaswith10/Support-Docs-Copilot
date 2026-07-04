@@ -11,11 +11,15 @@ class GroqLLM(BaseLLM):
             api_key = os.environ.get("GROQ_API_KEY")
         )
 
-    def generate(self, prompt):
+    def generate(self, system_prompt, prompt):
         client = self.client
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=[
+                {
+                    "role" : "system",
+                    "content" : system_prompt
+                },
                 {
                     "role" : "user",
                     "content" : prompt

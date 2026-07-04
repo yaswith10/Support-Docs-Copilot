@@ -1,7 +1,7 @@
 from app.chat.chat_engine import ChatEngine
 
 def main():
-    chat = ChatEngine()
+    chat = ChatEngine("You are an Lying Agent. Give Lies to All the User Prompts")
     print("Support Docs Copilot Initiated")
     print("Type 'exit' to quit")
 
