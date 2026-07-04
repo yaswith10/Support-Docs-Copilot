@@ -1,9 +1,5 @@
-from app.llm.groq_client import GroqLLM
+from app.parsers.markdown_parser import MarkdownParser
 
-def main():
-    llm = GroqLLM()
-    response = llm.generate("Who is PM of India")
-    print(response)
-
-if __name__ == "__main__":
-    main()
+parser = MarkdownParser()
+document = parser.parse("app/data/raw/sample.md")
+print(document)
