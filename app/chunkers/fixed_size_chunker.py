@@ -9,7 +9,7 @@ class FixedSizeChunker(BaseChunker):
     def chunk(self, document: Document) -> list[Chunk]:
         chunks = []
 
-        text = document.content
+        text = " ".join(document.content.split())
 
         for index, start in enumerate(range(0, len(text), self.chunk_size)):
             end = start + self.chunk_size

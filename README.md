@@ -10,7 +10,7 @@ Not Implemented yet
 - [x] Document Loader
 - [x] Markdown Parser
 - [ ] PDF Parser
-- [ ] Chunking
+- [x] Chunking
 - [ ] Embeddings
 - [ ] Vector Database
 - [ ] Semantic Search
