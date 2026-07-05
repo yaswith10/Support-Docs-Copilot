@@ -11,7 +11,7 @@ Not Implemented yet
 - [x] Markdown Parser
 - [ ] PDF Parser
 - [x] Chunking
-- [ ] Embeddings
+- [x] Embeddings
 - [ ] Vector Database
 - [ ] Semantic Search
 - [ ] RAG Pipeline
