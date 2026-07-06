@@ -10,3 +10,7 @@ class BaseEmbedder(ABC):
         Generate embeddings for a list of chunks
         """
         pass
+
+    @abstractmethod
+    def embed_query(self, query: str) -> list[list[float]]:
+        pass
