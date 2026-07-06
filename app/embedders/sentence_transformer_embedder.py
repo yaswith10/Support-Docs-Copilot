@@ -21,3 +21,12 @@ class SentenceTransformerEmbedder(BaseEmbedder):
         )
 
         return embeddings.tolist()
+    
+    def embed_query(self, query: str) -> list[list[float]]:
+        embeddings = self.model.encode(
+            query,
+            convert_to_numpy=True,
+            show_progress_bar=False
+        )
+
+        return embeddings.tolist()
