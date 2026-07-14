@@ -13,8 +13,8 @@ Not Implemented yet
 - [x] Chunking
 - [x] Embeddings
 - [x] Simple Vector Store
-- [ ] Indexing Pipeline
-- [ ] Retriever
+- [x] Indexing Pipeline
+- [x] Retriever
 - [ ] Prompt Builder
 - [ ] RAG Chat Engine
 - [ ] Streamlit UI
