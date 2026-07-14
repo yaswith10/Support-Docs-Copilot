@@ -9,15 +9,18 @@ Not Implemented yet
 - [x] Chat with AI
 - [x] Document Loader
 - [x] Markdown Parser
-- [ ] PDF Parser
+- [ ] PDF Parser (Later)
 - [x] Chunking
 - [x] Embeddings
-- [ ] Vector Database
-- [ ] Semantic Search
-- [ ] RAG Pipeline
+- [x] Simple Vector Store
+- [ ] Indexing Pipeline
+- [ ] Retriever
+- [ ] Prompt Builder
+- [ ] RAG Chat Engine
+- [ ] Streamlit UI
 - [ ] Citations
 - [ ] Conversation Memory
-- [ ] Streamlit UI
+- [ ] ChromaDB
 
 ## Tech Stack
 
