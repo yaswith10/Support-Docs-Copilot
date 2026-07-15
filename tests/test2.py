@@ -6,6 +6,7 @@ from app.indexing.indexer import Indexer
 from app.loaders.directory_loader import DirectoryLoader
 from app.retrieval.retriever import Retriever
 from app.vectorstores.simple_vector_store import SimpleVectorStore
+from app.prompts.prompt_builder import PromptBuilder
 
 
 def main():
@@ -44,16 +45,19 @@ def main():
 
     results = retriever.retrieve(query, k=3)
 
-    for i, result in enumerate(results, start=1):
-        print("=" * 80)
-        print(f"Result {i}")
-        print(f"Similarity Score: {result.score:.4f}")
-        print(f"Chunk ID: {result.chunk.id}")
-        print(f"Document ID: {result.chunk.document_id}")
-        print()
-        print(result.chunk.text)
-        print()
+    # for i, result in enumerate(results, start=1):
+    #     print("=" * 80)
+    #     print(f"Result {i}")
+    #     print(f"Similarity Score: {result.score:.4f}")
+    #     print(f"Chunk ID: {result.chunk.id}")
+    #     print(f"Document ID: {result.chunk.document_id}")
+    #     print()
+    #     print(result.chunk.text)
+    #     print()
 
+    prompt_builder = PromptBuilder()
+    prompt = prompt_builder.build(query, results)
+    print(prompt)
 
 if __name__ == "__main__":
     main()
