@@ -1,33 +1,46 @@
 # Support Docs Copilot
 
-An AI Powered support assistant that answers questions using any Documentation through RAG (Retrival-Augmented Generation). This is my first proper AI Personal Project. This README.md file acts as both documentation and my journey.
+A Retrieval-Augmented Generation (RAG) application that enables users to chat with technical documentation using natural language.
+
+**Live Demo:** https://yaswith-10-support-docs-copilot.streamlit.app/
+
+**Repository:** https://github.com/yaswith10/Support-Docs-Copilot
+
+---
 
 ## Features
 
-Not Implemented yet
+- Chat with technical documentation
+- Markdown document parsing
+- Recursive directory loading
+- Fixed-size text chunking
+- Sentence Transformer embeddings
+- Custom in-memory vector store
+- Semantic similarity search
+- Retrieval-Augmented Generation (RAG)
+- Streamlit web interface
 
-- [x] Chat with AI
-- [x] Document Loader
-- [x] Markdown Parser
-- [ ] PDF Parser (Later)
-- [x] Chunking
-- [x] Embeddings
-- [x] Simple Vector Store
-- [x] Indexing Pipeline
-- [x] Retriever
-- [x] Prompt Builder
-- [x] RAG Chat Engine
-- [ ] Streamlit UI
-- [ ] Citations
-- [ ] Conversation Memory
-- [ ] ChromaDB
+> **Current demo dataset:** A subset of the LangGraph documentation.
+
+---
+
+## Demo
+
+Ask questions such as:
+
+- What is LangGraph?
+- How does memory work in LangGraph?
+- What are the benefits of LangGraph?
+- Explain the Pregel execution model.
+
+---
 
 ## Tech Stack
 
-- Python 3.12.3
+- Python
 - Streamlit
-- Groq
-- Chroma DB
+- Groq (Llama 3.3 70B)
+- Sentence Transformers
+- NumPy
 
-
-
+...
