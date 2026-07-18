@@ -15,8 +15,8 @@ Not Implemented yet
 - [x] Simple Vector Store
 - [x] Indexing Pipeline
 - [x] Retriever
-- [ ] Prompt Builder
-- [ ] RAG Chat Engine
+- [x] Prompt Builder
+- [x] RAG Chat Engine
 - [ ] Streamlit UI
 - [ ] Citations
 - [ ] Conversation Memory
